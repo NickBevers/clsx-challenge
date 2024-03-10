@@ -15,7 +15,7 @@ function toVal(m) {
   return s;
 }
 
-export function clsx() {
+export function classCombine() {
   let t,x,s='';
   for (t of arguments) {
     t && (x = toVal(t)) && (s && (s += ' '), s += x);
@@ -24,4 +24,4 @@ export function clsx() {
   return s;
 }
 
-export default clsx;
+export default classCombine;
